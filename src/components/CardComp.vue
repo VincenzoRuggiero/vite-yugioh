@@ -32,9 +32,16 @@ export default {
 </script>
 
 <template>
-  <p v-for="card in store.cardsList">
-    {{ card.name }}
-  </p>
+  <div v-for="card in store.cardsList" class="single-card">
+    <img :src="card.card_images.image_url" alt="" />
+    <p>{{ card.name }}</p>
+    <p>{{ card.archetype }}</p>
+  </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.single-card {
+  width: calc(100% / 5);
+  background-color: #d48f38;
+}
+</style>

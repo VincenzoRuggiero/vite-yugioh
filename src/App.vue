@@ -10,11 +10,7 @@ export default {
 </script>
 
 <template>
-  <main>
-    <AppMain />
-  </main>
+  <AppMain />
 </template>
 
-<style lang="scss">
-@use "../node_modules/bootstrap/scss/bootstrap.scss";
-</style>
+<style lang="scss"></style>
