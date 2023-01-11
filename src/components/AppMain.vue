@@ -17,12 +17,9 @@ export default {
     //recupero le informazioni per le carte tramite l'API fornita
     getCards() {
       axios
-        .get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0", {
-          params: {},
-        })
-        .then((res) => {
-          // console.log(res);
-          this.cardsInfo = res.data;
+        .get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0")
+        .then((response) => {
+          this.cardsInfo = response.data;
         });
     },
   },
@@ -34,7 +31,9 @@ export default {
 </script>
 
 <template>
-  <div>{{ cardsInfo }}</div>
+  <p v-for="card in cardsInfo">
+    {{ card.name }}
+  </p>
 </template>
 
 <style lang="scss"></style>
