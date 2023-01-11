@@ -1,15 +1,17 @@
 <script>
-import MainApp from "./components/MainApp.vue";
+import AppMain from "./components/AppMain.vue";
 
 export default {
   components: {
-    MainApp,
+    AppMain,
   },
 };
 </script>
 
 <template>
-  <p class="text-danger">Wella</p>
+  <main>
+    <AppMain />
+  </main>
 </template>
 
 <style lang="scss">
