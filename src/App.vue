@@ -1,4 +1,5 @@
 <script>
+//Importo i Componenti Figli
 import AppMain from "./components/AppMain.vue";
 
 export default {
