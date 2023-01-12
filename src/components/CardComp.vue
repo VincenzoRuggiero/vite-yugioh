@@ -33,15 +33,31 @@ export default {
 
 <template>
   <div v-for="card in store.cardsList" class="single-card">
-    <img :src="card.card_images.image_url" alt="" />
-    <p>{{ card.name }}</p>
-    <p>{{ card.archetype }}</p>
+    <img :src="card.card_images[0].image_url" alt="" />
+    <p class="card-title">{{ card.name }}</p>
+    <p class="card-type">{{ card.archetype }}</p>
   </div>
 </template>
 
 <style lang="scss">
 .single-card {
-  width: calc(100% / 5);
+  width: calc(100% / 5 - 1rem);
   background-color: #d48f38;
+  margin: 0 0.5rem 1rem;
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  .card-title {
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .card-type {
+    padding: 1rem 0 0.5rem;
+  }
 }
 </style>

@@ -56,13 +56,13 @@ main {
   .total-cards {
     background-color: #202528;
     color: white;
-    padding: 0.7rem 1rem;
+    padding: 1rem;
   }
 
   .cards-container {
     background-color: white;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 0 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
   }
