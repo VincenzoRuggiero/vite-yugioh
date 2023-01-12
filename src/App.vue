@@ -13,6 +13,8 @@ export default {
   data() {
     return {
       store,
+      apiUri:
+        "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=laval&num=10&offset=0",
     };
   },
   components: {
@@ -28,22 +30,23 @@ export default {
           this.store.cardsList = response.data.data;
         });
     },
-
-    searchCard() {
+    //Filtro le carte in base al valore selezionato
+    searchCard(value) {
       axios
-        .get(url, params)
+        .get(this.apiUri, {
+          params: {
+            archetype: value,
+          },
+        })
         .then((res) => {
           console.log(res);
-        })
-        .catch((err) => {
-          console.error(err);
         });
     },
   },
 
   created() {
     this.getCards();
-    // this.searchCard();
+    this.searchCard();
   },
 };
 </script>

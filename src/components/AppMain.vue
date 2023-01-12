@@ -17,7 +17,7 @@ export default {
 
 <template>
   <main>
-    <select name="" id="" @change="$emit('searchedCard')">
+    <select name="" id="" @change="$emit('searchedCard')" v-model="value">
       <option value="Alien">Alien</option>
       <option value="Laval">Laval</option>
       <option value="Vylon">Vylon</option>
