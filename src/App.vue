@@ -53,7 +53,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain @searchedCard="searchCard" />
+  <AppMain @searchedCard="searchCard(value)" />
 </template>
 
 <style lang="scss"></style>

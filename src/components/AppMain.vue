@@ -10,6 +10,7 @@ export default {
   data() {
     return {
       store,
+      type: "",
     };
   },
 };
@@ -17,7 +18,7 @@ export default {
 
 <template>
   <main>
-    <select name="" id="" @change="$emit('searchedCard')" v-model="value">
+    <select name="" id="" @change="$emit('searchedCard', type)">
       <option value="Alien">Alien</option>
       <option value="Laval">Laval</option>
       <option value="Vylon">Vylon</option>
