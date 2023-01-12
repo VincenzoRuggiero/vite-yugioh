@@ -10,7 +10,6 @@ export default {
   data() {
     return {
       store,
-      type: "",
     };
   },
 };
@@ -18,15 +17,6 @@ export default {
 
 <template>
   <main>
-    <select name="" id="" @change="$emit('searchedCard', type)">
-      <option value="Alien">Alien</option>
-      <option value="Laval">Laval</option>
-      <option value="Vylon">Vylon</option>
-      <option value="Inzektor">Inzektor</option>
-      <option value="Umi">Umi</option>
-      <option value="Gusto">Gusto</option>
-    </select>
-
     <div class="total-cards">Found {{ store.cardsList.length }} cards</div>
     <div class="cards-container">
       <CardComp />

@@ -1,9 +1,8 @@
 <script>
-//Importo Axios per recuperare i dati dall'API
-import axios from "axios";
-
 //Collego il file JS che contiene i dati delle carte
 import { store } from "../store.js";
+//Importo Axios per recuperare i dati dall'API
+import axios from "axios";
 
 export default {
   name: "CardComp",
@@ -13,7 +12,6 @@ export default {
       store,
     };
   },
-
   methods: {
     //Recupero le informazioni per le carte tramite l'API fornita
     getCards() {
@@ -24,7 +22,6 @@ export default {
         });
     },
   },
-
   created() {
     this.getCards();
   },
