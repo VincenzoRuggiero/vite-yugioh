@@ -16,13 +16,16 @@ export default {
 </script>
 
 <template>
-  <header class="header">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg"
-      alt="Site's logo" />
-    <h1>Yu-Gi-Oh Api</h1>
-  </header>
   <main>
+    <select name="" id="" @change="$emit('searchedCard')">
+      <option value="Alien">Alien</option>
+      <option value="Laval">Laval</option>
+      <option value="Vylon">Vylon</option>
+      <option value="Inzektor">Inzektor</option>
+      <option value="Umi">Umi</option>
+      <option value="Gusto">Gusto</option>
+    </select>
+
     <div class="total-cards">Found {{ store.cardsList.length }} cards</div>
     <div class="cards-container">
       <CardComp />
@@ -32,22 +35,6 @@ export default {
 
 <style lang="scss">
 @use "../styles/general.scss";
-
-header {
-  background-color: white;
-  padding: 0.5rem 1rem;
-
-  img {
-    width: 4rem;
-    margin-right: 0.5rem;
-  }
-
-  h1 {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-}
 
 main {
   background-color: #d48f38;
