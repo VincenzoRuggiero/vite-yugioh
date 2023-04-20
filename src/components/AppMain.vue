@@ -40,7 +40,7 @@ main {
   .cards-container {
     background-color: white;
     margin: 0 auto;
-    padding: 0 1.5rem 2rem;
+    padding: 2rem 1.5rem 2rem;
     display: flex;
     flex-wrap: wrap;
   }
