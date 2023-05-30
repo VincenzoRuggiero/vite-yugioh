@@ -42,6 +42,7 @@ main {
     margin: 0 auto;
     padding: 2rem 1.5rem 2rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

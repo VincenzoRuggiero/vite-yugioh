@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss">
 .single-card {
-  width: calc(100% / 5 - 1rem);
+  width: 15rem;
   background-color: #d48f38;
   margin: 0 0.5rem 1rem;
   text-align: center;
